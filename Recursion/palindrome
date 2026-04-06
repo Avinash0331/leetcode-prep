@@ -1,6 +1,7 @@
 def palindrome(s):
     def check(left, right):
-        if left >= right:
+        length = right - left + 1
+        if length == 1 or length == 0:
             return True
         if s[left] != s[right]:
             return False
@@ -9,4 +10,4 @@ def palindrome(s):
     return check(0, len(s) - 1)
 
 s = 'naman'
-print(palindrome(s))
+print(palindrome(s))    
