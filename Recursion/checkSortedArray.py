@@ -2,7 +2,7 @@ def isSorted(arr) -> bool:
         # code here
         n = len(arr)
         def check(i):
-            if i == n or i==n-1:
+            if i >= n-1:
                 return True
             if arr[i] > arr[i+1]:
                 return False
